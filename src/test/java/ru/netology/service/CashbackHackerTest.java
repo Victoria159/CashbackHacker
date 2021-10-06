@@ -6,7 +6,7 @@ import static org.testng.Assert.*;
 
 public class CashbackHackerTest {
     @Test
-    public void shouldPurchaseFor2000(){
+    public void shouldPurchaseFor2000() {
         CashbackHacker cashbackHacker = new CashbackHacker();
         int amount = 2000;
 
@@ -15,14 +15,15 @@ public class CashbackHackerTest {
 
         assertEquals(actual, expected);
     }
-@Test
-    public void  shouldPurchaseFor900(){
+
+    @Test
+    public void shouldPurchaseFor900() {
         CashbackHacker cashbackHacker = new CashbackHacker();
         int amount = 900;
 
         int actual = cashbackHacker.remain(amount);
-        int expected= 100;
+        int expected = 100;
 
         assertEquals(actual, expected);
-}
+    }
 }
